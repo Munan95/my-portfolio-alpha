@@ -29,9 +29,9 @@ export default function Footer() {
   return (
     <footer className="relative bg-[#060b1b] text-white">
       {/* thin amber glow along the top edge */}
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-amber-100/60 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-amber-100/60 to-transparent" />
 
-      <div className="mx-auto max-w-[1536px] px-6 pb-8 pt-20">
+      <div className="mx-auto max-w-384 px-6 pb-8 pt-20">
         <div className="flex flex-col items-start justify-between gap-10 md:flex-row md:items-center">
           {/* Brand */}
           <div>
@@ -86,4 +86,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};

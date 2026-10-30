@@ -41,7 +41,7 @@ export default function Navbar() {
     // sticky wrapper: stays pinned to the top while scrolling
     <header className="sticky top-0 z-50 bg-black px-4 pt-12 sm:px-6">
       <nav
-        className="mx-auto flex h-[70px] max-w-[1400px] items-center justify-between rounded-full
+        className="mx-auto flex h-17.5 max-w-350 items-center justify-between rounded-full
                    border border-[#272e44] bg-[#161c2c]/90 px-9 backdrop-blur-md"
       >
         {/* Logo */}
@@ -67,11 +67,11 @@ export default function Navbar() {
           aria-label="Toggle theme"
           className="flex h-10 w-10 items-center justify-center rounded-full border border-[#2c2c2c]
                      bg-[#1e1e1e] text-amber-100 transition-colors hover:bg-[#262626]
-                     focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber-100"
+                     focus-visible:outline-2 focus-visible:outline-amber-100"
         >
           {dark ? <MoonIcon /> : <SunIcon />}
         </button>
       </nav>
     </header>
   );
-}
+};

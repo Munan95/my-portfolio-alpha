@@ -30,7 +30,7 @@ export default function Home() {
             width={350}
             height={350}
             priority
-            className="h-[350px] w-[350px] rounded-full border-5 border-amber-100/70 object-cover"
+            className="h-87.5 w-87.5 rounded-full border-5 border-amber-100/70 object-cover"
           />
         </div>
 
