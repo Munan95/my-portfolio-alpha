@@ -38,12 +38,10 @@ export default function Navbar() {
   }, [dark]);
 
   return (
-    // sticky wrapper: stays pinned to the top while scrolling
-    <header className="sticky top-0 z-50 bg-black px-4 pt-8 sm:px-6">
+    // Fixed : stays pinned to the top while scrolling
+    <header className="fixed top-4 inset-x-4 md:top-6 md:inset-x-8 lg:top-8 lg:inset-x-16 h-16.5 max-w-7xl mx-auto rounded-full bg-background/80 dark:bg-slate-900/80 backdrop-blur-md border shadow-md z-50 transition-all">
       <nav
-        className="mx-auto flex h-16.5 max-w-7xl items-center justify-between rounded-full
-                   border border-[#272e44] bg-[#161c2c]/90 px-9 backdrop-blur-md"
-      >
+        className="flex h-full items-center justify-between px-6 md:px-8">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold tracking-tight text-amber-100">
           MUNAN.
@@ -53,7 +51,7 @@ export default function Navbar() {
         <ul className="hidden items-center gap-9 md:flex">
           {links.map((l) => (
             <li key={l.href}>
-              <Link href={l.href} className="text-[15px] text-white transition-colors rounded-md px-2 pt-2 pb-3 hover-px-2 hover:pt-2 hover:pb-3 hover:bg-black/30">
+              <Link href={l.href} className="text-[15px] text-white transition-colors rounded-md px-2 pt-2 pb-3 hover:bg-black/30">
                 {l.label}
               </Link>
             </li>

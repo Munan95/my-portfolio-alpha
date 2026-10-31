@@ -8,7 +8,7 @@ import { JavaScriptIcon } from "@/components/icon";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center font-sans bg-black pt-5">
+    <div className="flex flex-col flex-1 items-center justify-center font-sans bg-black pt-35">
       <main className="flex flex-1 w-full flex-row items-center justify-between py-32 pl-25 pr-60 bg-black sm:items-start">
         
         {/* Profile Information */}
