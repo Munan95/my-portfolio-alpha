@@ -43,7 +43,7 @@ export default function Navbar() {
       <nav
         className="flex h-full items-center justify-between px-6 md:px-8">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold tracking-tight text-amber-100">
+        <Link href="/" className="text-2xl font-bold tracking-tight text-rose-400">
           MUNAN.
         </Link>
 
@@ -51,7 +51,7 @@ export default function Navbar() {
         <ul className="hidden items-center gap-9 md:flex">
           {links.map((l) => (
             <li key={l.href}>
-              <Link href={l.href} className="text-[15px] text-white transition-colors rounded-md px-2 pt-2 pb-3 hover:bg-black/30">
+              <Link href={l.href} className="flex items-center text-sm text-white transition-colors rounded-md p-2.25 hover:bg-black/30">
                 {l.label}
               </Link>
             </li>
@@ -64,8 +64,8 @@ export default function Navbar() {
           onClick={() => setDark((d) => !d)}
           aria-label="Toggle theme"
           className="flex h-10 w-10 items-center justify-center rounded-full border border-[#2c2c2c]
-                     bg-[#1e1e1e] text-amber-100 transition-colors hover:bg-[#262626]
-                     focus-visible:outline-2 focus-visible:outline-amber-100"
+                     bg-[#1e1e1e] text-rose-400 transition-colors hover:bg-[#262626]
+                     focus-visible:outline-2 focus-visible:outline-rose-400"
         >
           {dark ? <MoonIcon /> : <SunIcon />}
         </button>

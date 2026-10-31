@@ -13,7 +13,7 @@ export default function Home() {
         
         {/* Profile Information */}
         <div className="flex flex-col text-white w-130">
-          <p className="text-6xl font-bold py-6">Hi, I'm Munan</p>
+          <p className="flex flex-row gap-2 text-6xl font-bold py-6"><span>Hi, I'm</span><span className="text-transparent bg-clip-text bg-linear-to-r from-rose-400 to-orange-300">Munan</span></p>
           
           <p className="flex flex-row gap-2.5 items-center text-2xl py-2">
             <span className="text-white/60">a Full Stack Developer |</span>
@@ -29,7 +29,7 @@ export default function Home() {
               target=""
               rel="noopener noreferrer"
               aria-label="Github"
-              className="group flex flex-row items-center justify-center gap-1 rounded-full bg-white px-7 py-3 text-black shadow-md transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl active:scale-95"
+              className="group flex flex-row items-center justify-center gap-1 rounded-full bg-white px-7 py-3 text-black shadow-lg transition-all duration-300 ease-out hover:-translate-y-1.5 hover:shadow-xl active:scale-95"
             >
               <span className="font-medium transition-colors duration-300">
                 🚀 Get Started
@@ -52,15 +52,22 @@ export default function Home() {
         </div>
 
         {/* Profile Picture */}
-        <div className="rounded-full">
-          <Image 
-            src="/My-Photo.jpg" 
-            alt="my-profile"
-            width={350}
-            height={350}
-            priority
-            className="h-87.5 w-87.5 rounded-full border-4 border-amber-100/70 object-cover"
-          />
+        <div className="relative rounded-full">
+          
+          {/* Expanding ring */}
+          <span className="pointer-events-none absolute inset-0 rounded-full border-6 border-rose-100/30 animate-[ring-expand_1s_ease-out_infinite]" />
+
+          <div className="relative rounded-full bg-linear-to-r from-rose-400 to-orange-300 p-1">
+            <Image
+              src="/My-Photo.jpg"
+              alt="my-profile"
+              width={350}
+              height={350}
+              priority
+              className="h-87.5 w-87.5 rounded-full object-cover"
+            />
+          </div>
+
         </div>
 
       </main>
