@@ -39,9 +39,9 @@ export default function Navbar() {
 
   return (
     // sticky wrapper: stays pinned to the top while scrolling
-    <header className="sticky top-0 z-50 bg-black px-4 pt-12 sm:px-6">
+    <header className="sticky top-0 z-50 bg-black px-4 pt-8 sm:px-6">
       <nav
-        className="mx-auto flex h-17.5 max-w-350 items-center justify-between rounded-full
+        className="mx-auto flex h-16.5 max-w-7xl items-center justify-between rounded-full
                    border border-[#272e44] bg-[#161c2c]/90 px-9 backdrop-blur-md"
       >
         {/* Logo */}
@@ -50,10 +50,10 @@ export default function Navbar() {
         </Link>
 
         {/* Links (centered on desktop, hidden on small screens) */}
-        <ul className="hidden items-center gap-11 md:flex">
+        <ul className="hidden items-center gap-9 md:flex">
           {links.map((l) => (
             <li key={l.href}>
-              <Link href={l.href} className="text-[15px] text-white transition-colors hover:text-amber-100">
+              <Link href={l.href} className="text-[15px] text-white transition-colors rounded-md px-2 pt-2 pb-3 hover-px-2 hover:pt-2 hover:pb-3 hover:bg-black/30">
                 {l.label}
               </Link>
             </li>
