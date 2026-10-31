@@ -52,20 +52,24 @@ export default function Home() {
         </div>
 
         {/* Profile Picture */}
-        <div className="relative rounded-full">
-          
+        <div className="group relative rounded-full">
+
           {/* Expanding ring */}
           <span className="pointer-events-none absolute inset-0 rounded-full border-6 border-rose-100/30 animate-[ring-expand_1s_ease-out_infinite]" />
 
+          {/* Gradient ring (stays still) */}
           <div className="relative rounded-full bg-linear-to-r from-rose-400 to-orange-300 p-1">
-            <Image
-              src="/My-Photo.jpg"
-              alt="my-profile"
-              width={350}
-              height={350}
-              priority
-              className="h-87.5 w-87.5 rounded-full object-cover"
-            />
+            {/* Clips the photo so it can't spill outside the circle */}
+            <div className="overflow-hidden rounded-full">
+              <Image
+                src="/My-photo.jpg"
+                alt="my-profile"
+                width={350}
+                height={350}
+                priority
+                className="h-87.5 w-87.5 rounded-full transition-transform duration-600 object-cover group-hover:scale-105"
+              />
+            </div>
           </div>
 
         </div>
