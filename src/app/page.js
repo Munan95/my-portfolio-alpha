@@ -8,8 +8,8 @@ import { JavaScriptIcon } from "@/components/icon";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center font-sans bg-black pt-35">
-      <main className="flex flex-1 w-full flex-row items-center justify-between py-32 pl-25 pr-60 bg-black sm:items-start">
+    <div className="flex flex-col flex-1 items-center justify-center font-sans bg-black/94 pt-40">
+      <div className="flex flex-1 w-full flex-row items-center justify-between pt-30 pb-42 pl-25 pr-60 bg-black/3 sm:items-start">
         
         {/* Profile Information */}
         <div className="flex flex-col text-white w-130">
@@ -74,7 +74,7 @@ export default function Home() {
 
         </div>
 
-      </main>
+      </div>
       <About />
       <Projects />
       <Blogs />
