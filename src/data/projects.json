@@ -1,0 +1,64 @@
+[
+  {
+    "id": 41,
+    "title": "Photo Gallery - Photography Management System",
+    "description": "Photo Gallery is an interactive, AI-driven educational chatbot designed specifically for children under 7 to facilitate progressive English language acquisition. The platform features a dynamic level-based learning system (Phonics, Phrases, and Sentences) with enforced linguistic constraints. It integrates advanced Social-Emotional Learning (SEL) capabilities, allowing the bot to detect negative sentiment and provide empathetic support before transitioning back to structured learning.",
+    "image": "/project-1.png",
+    "tags": [
+      "Next.js 17",
+      "JavaScript"
+    ],
+    "live": "https://photo-gallery-pg.netlify.app",
+    "github": "https://github.com/Munan95/Photo-Gallery"
+  },
+  {
+    "id": 40,
+    "title": "Weather Management System",
+    "description": "WeathrNow is a high-performance, completely type-safe E-Commerce Product Management Platform designed for merchants to seamlessly organize their inventories. The system enforces strict role-isolation, allowing logged-in merchants to securely perform CRUD operations exclusively on their own products. Features include advanced server-side search, multi-parameter sorting, category filtering, API debouncing, and secure image streaming using Cloudinary.",
+    "image": "/project-2.png",
+    "tags": [
+      "Next.js 16 (App Router)",
+      "JavaScript"
+    ],
+    "live": "https://weather-app-lime-alpha-15.vercel.app",
+    "github": "https://github.com/Munan95/weather-app"
+  },
+  {
+    "id": 39,
+    "title": "PureHealth - Smart Health Solutions",
+    "description": "Health solutions is a modern, production-ready e-commerce platform designed for baby and maternity products. The system supports role-based access for Admin, Staff, and Customers. Key features include product and category management, cart and checkout flow, order tracking, wishlist, coupon system, inventory management, and secure authentication with Google OAuth. Built with Next.js 14 (App Router), Node.js, Express, Prisma, and PostgreSQL.",
+    "image": "/project-3.png",
+    "tags": [
+      "HTML",
+      "TailwindCSS"
+    ],
+    "live": "https://doctor-appoinment-clone11.netlify.app",
+    "github": "https://github.com/Munan95/doctor-appoinment"
+  },
+  {
+    "id": 38,
+    "title": "My Portfolio",
+    "description": "Digital Wallet System is a secure and user-friendly financial application that allows users to manage their money efficiently. It features role-based access for Admin, Users, and Managers. Key functionalities include wallet management, sending and receiving money, transaction history, and real-time balance tracking. Built with React & JavaScript, NodeJS & ExpressJS, Redux for state management, and MongoDB for data storage.",
+    "image": "/project-4.png",
+    "tags": [
+      "JavaScript",
+      "React"
+    ],
+    "live": "https://my-portfolio-five-navy-78.vercel.app",
+    "github": "https://github.com/Munan95/my-portfolio",
+    "backend": "https://github.com/Munan95/my-portfolio-backend"
+  },
+  {
+    "id": 37,
+    "title": "Multiple Card Rendering",
+    "description": "Multiple Card Rendering is a comprehensive management platform with role-based access for Admin, HR Manager, and Users. It features a powerful dashboard for tracking tasks, users, and analytics, along with a built-in payment system. The frontend is built with React, while NodeJS & ExpressJS handle the backend and MongoDB stores the data. Authentication is secured with JWT and Firebase.",
+    "image": "/project-5.png",
+    "tags": [
+      "React",
+      "NodeJS"
+    ],
+    "live": "https://profile-contact-pc.netlify.app",
+    "github": "https://github.com/Munan95/Practice-project1",
+    "backend": "https://github.com/Munan95/Practice-project1"
+  }
+]

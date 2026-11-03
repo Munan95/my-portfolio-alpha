@@ -4,6 +4,9 @@ const nextConfig = {
   devIndicators: false,
   cacheComponents: true,
   partialPrefetching: true,
+  images: {
+    remotePatterns: [{ protocol: "https", hostname: "i.ibb.co.com" }],
+  },
   turbopack: {
     rules: {
       "*.css": {
