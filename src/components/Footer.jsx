@@ -27,7 +27,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#070717] text-white">
+    <footer className="relative bg-[#030202] text-white">
       {/* thin amber glow along the top edge */}
       <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-amber-100/60 to-transparent" />
 
