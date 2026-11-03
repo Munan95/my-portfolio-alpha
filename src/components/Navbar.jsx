@@ -13,7 +13,7 @@ const links = [
 
 function MoonIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor"
       strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
     </svg>
@@ -39,7 +39,7 @@ export default function Navbar() {
 
   return (
     // Fixed : stays pinned to the top while scrolling
-    <header className="fixed top-4 inset-x-4 md:top-6 md:inset-x-8 lg:top-8 lg:inset-x-16 h-16.5 max-w-7xl mx-auto rounded-full bg-background/80 dark:bg-slate-900/80 backdrop-blur-md border shadow-md z-50 transition-all">
+    <header className="fixed top-4 inset-x-4 md:top-6 md:inset-x-8 lg:top-8 lg:inset-x-16 h-16 max-w-7xl mx-auto rounded-full bg-background/80 dark:bg-black/50 backdrop-blur-md border border-white/10 shadow-md z-50 transition-all">
       <nav
         className="flex h-full items-center justify-between px-6 md:px-8">
         {/* Logo */}
@@ -48,10 +48,10 @@ export default function Navbar() {
         </Link>
 
         {/* Links (centered on desktop, hidden on small screens) */}
-        <ul className="hidden items-center gap-9 md:flex">
+        <ul className="hidden items-center gap-6 md:flex">
           {links.map((l) => (
             <li key={l.href}>
-              <Link href={l.href} className="flex items-center text-sm text-white transition-colors rounded-md p-2.25 hover:bg-black/30">
+              <Link href={l.href} className="flex items-center text-sm text-white transition-colors rounded-md p-2.25 hover:bg-[#171717b5]">
                 {l.label}
               </Link>
             </li>

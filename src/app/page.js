@@ -5,11 +5,12 @@ import Projects from "./projects/page";
 import Blogs from "./blogs/page";
 import Contact from "./contact/page";
 import { JavaScriptIcon } from "@/components/icon";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center font-sans bg-black/94 pt-40">
-      <div className="flex flex-1 w-full flex-row items-center justify-between pt-30 pb-42 pl-25 pr-60 bg-black/3 sm:items-start">
+    <div className="flex flex-col flex-1 items-center justify-center font-sans pt-40">
+      <div className="flex flex-1 w-full flex-row items-center justify-between pt-30 pb-42 pl-25 pr-60 sm:items-start">
         
         {/* Profile Information */}
         <div className="flex flex-col text-white w-130">
@@ -76,6 +77,7 @@ export default function Home() {
 
       </div>
       <About />
+      <Skills />
       <Projects />
       <Blogs />
       <Contact />
