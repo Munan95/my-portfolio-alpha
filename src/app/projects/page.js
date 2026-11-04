@@ -5,7 +5,7 @@ import projects from "@/data/projects.json";
 
 export default function Projects() {
   return (
-    <div className="w-full px-6 py-20 text-white bg-black/30 sm:px-12 lg:px-20">
+    <div className="w-full px-6 pt-30 pb-24 text-white bg-black/30 sm:px-12 lg:px-20">
       <div className="mx-auto max-w-7xl">
         {/* Heading */}
         <div className="mb-16 space-y-4 text-center">
