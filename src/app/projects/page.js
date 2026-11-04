@@ -42,6 +42,7 @@ export default function Projects() {
                 </div>
 
                 <Image
+                  loading="eager"
                   src={p.image}
                   alt={p.title}
                   fill

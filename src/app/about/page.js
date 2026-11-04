@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Plink from "@/data/links.json";
 
 const skills = [
   { name: "JavaScript" },
@@ -85,7 +86,7 @@ const About = () => {
 
         <div className="flex flex-wrap items-center gap-4 py-8">
           <Link
-            href="/Resume_Munan_Full_Stack_Developer.pdf"
+            href={Plink.Resume}
             download
             className="flex w-fit items-center gap-3 rounded-full bg-white px-10 py-4 font-semibold text-black shadow-xl shadow-white/10 transition-all hover:-translate-y-1 hover:shadow-white/20 active:scale-95"
           >
@@ -104,7 +105,7 @@ const About = () => {
             Download CV
           </Link>
           <Link
-            href="https://github.com/Munan95"
+            href={Plink.Github}
             target="_blank"
             rel="noopener noreferrer"
             className="flex w-fit items-center gap-3 rounded-full border border-white/20 bg-[#171616] px-10 py-4 font-semibold text-slate-100 transition-all hover:-translate-y-1 hover:bg-white hover:text-black"

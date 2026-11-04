@@ -1,22 +1,22 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
-
-const EMAIL = "munankhan83@gmail.com";
+import Plink from "@/data/links.json";
 
 const contactInfo = [
   {
     label: "LinkedIn",
     value: "morshed-khan-munan",
-    href: "https://www.linkedin.com/in/md-morshed-khan-munan-1390863b0",
+    href: `${Plink.Linkedin}`,
     icon: FaLinkedin,
     external: true,
   },
   {
     label: "Email me",
-    value: EMAIL,
-    href: `mailto:${EMAIL}`,
+    value: `${Plink.Email}`,
+    href: `mailto:${Plink.Email}`,
     icon: FaEnvelope,
   },
   {
@@ -41,7 +41,7 @@ export default function Contact() {
     // Opens the visitor's email app with the message filled in.
     // Replace with a fetch() to your own API route / EmailJS / Formspree to send from the site.
     const body = `Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`;
-    window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(
+    window.location.href = `mailto:${Plink.Email}?subject=${encodeURIComponent(
       form.subject
     )}&body=${encodeURIComponent(body)}`;
   };
@@ -85,14 +85,14 @@ export default function Contact() {
               );
 
               return href ? (
-                <a
+                <Link
                   key={label}
                   href={href}
                   {...(external && { target: "_blank", rel: "noopener noreferrer" })}
                   className="group flex cursor-pointer items-center gap-4"
                 >
                   {content}
-                </a>
+                </Link>
               ) : (
                 <div key={label} className="group flex cursor-default items-center gap-4">
                   {content}

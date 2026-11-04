@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Plink from "@/data/links.json";
 
 const links = [
   { href: "/", label: "Home" },
@@ -20,9 +21,9 @@ const icons = {
 };
 
 const socials = [
-  { href: "https://github.com/Munan95", label: "GitHub", icon: "github" },
-  { href: "https://www.linkedin.com/in/md-morshed-khan-munan-1390863b0", label: "LinkedIn", icon: "linkedin" },
-  { href: "https://x.com/Munan_Khan69", label: "Twitter", icon: "twitter" },
+  { href: `${Plink.Github}`, label: "GitHub", icon: "github" },
+  { href: `${Plink.Linkedin}`, label: "LinkedIn", icon: "linkedin" },
+  { href: `${Plink.Twitter}`, label: "Twitter", icon: "twitter" },
 ];
 
 export default function Footer() {
