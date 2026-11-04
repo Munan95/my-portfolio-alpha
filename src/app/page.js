@@ -53,7 +53,7 @@ export default function Home() {
         </div>
 
         {/* Profile Picture */}
-        <div className="group relative rounded-full">
+        <div className="group relative hidden rounded-full md:block">
 
           {/* Expanding ring */}
           <span className="pointer-events-none absolute inset-0 rounded-full border-6 border-rose-100/30 animate-[ring-expand_1s_ease-out_infinite]" />
