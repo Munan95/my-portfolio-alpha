@@ -39,7 +39,7 @@ export default function Navbar() {
 
   return (
     // Fixed : stays pinned to the top while scrolling
-    <header className="fixed top-4 inset-x-4 md:top-6 md:inset-x-8 lg:top-8 lg:inset-x-16 h-16 max-w-7xl mx-auto rounded-full bg-background/80 dark:bg-black/50 backdrop-blur-md border border-white/10 shadow-md z-50 transition-all">
+    <header className="fixed top-2 inset-x-4 md:top-4 md:inset-x-8 lg:top-6 lg:inset-x-16 h-16 max-w-7xl mx-auto rounded-full bg-background/80 dark:bg-black/50 backdrop-blur-md border border-white/10 shadow-md z-50 transition-all">
       <nav
         className="flex h-full items-center justify-between px-6 md:px-8">
         {/* Logo */}
