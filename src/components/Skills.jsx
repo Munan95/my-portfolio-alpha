@@ -81,4 +81,4 @@ export default function Skills() {
       </div>
     </section>
   );
-}
+};
