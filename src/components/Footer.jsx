@@ -20,9 +20,9 @@ const icons = {
 };
 
 const socials = [
-  { href: "https://github.com/", label: "GitHub", icon: "github" },
-  { href: "https://linkedin.com/", label: "LinkedIn", icon: "linkedin" },
-  { href: "https://x.com/", label: "Twitter", icon: "twitter" },
+  { href: "https://github.com/Munan95", label: "GitHub", icon: "github" },
+  { href: "https://www.linkedin.com/in/md-morshed-khan-munan-1390863b0", label: "LinkedIn", icon: "linkedin" },
+  { href: "https://x.com/Munan_Khan69", label: "Twitter", icon: "twitter" },
 ];
 
 export default function Footer() {
