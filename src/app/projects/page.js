@@ -22,7 +22,7 @@ export default function Projects() {
         </div>
 
         {/* Cards */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 bg-[#0b0b0b] md:grid-cols-2 lg:grid-cols-3">
           {projects.map((p) => (
             <article
               key={p.id}
