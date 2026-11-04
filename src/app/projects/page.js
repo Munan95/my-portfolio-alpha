@@ -35,7 +35,7 @@ export default function Projects() {
                   <Link
                     href={`/projects/${p.id}`}
                     aria-label={`View details of ${p.title}`}
-                    className="translate-y-4 rounded-full bg-white p-3 text-black shadow-xl transition-transform duration-500 group-hover:translate-y-0"
+                    className="translate-y-4 rounded-full bg-white/90 p-3 text-black shadow-xl transition-transform duration-500 group-hover:translate-y-0"
                   >
                     <FiArrowRight size={24} />
                   </Link>
@@ -75,35 +75,35 @@ export default function Projects() {
 
                 {/* Buttons */}
                 <div className="mt-auto flex flex-wrap gap-3 pt-4">
-                  <a
+                  <Link
                     href={p.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-bold text-black shadow-lg shadow-white/10 transition-all hover:opacity-90 active:scale-95"
+                    className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-white/90 px-4 py-2.5 text-sm font-bold text-black shadow-lg shadow-white/10 transition-all hover:opacity-90 active:scale-95"
                   >
                     <FiExternalLink size={16} /> Live
-                  </a>
+                  </Link>
 
                   <div className="flex w-full gap-2 sm:w-auto">
-                    <a
+                    <Link
                       href={p.github}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Frontend source code"
-                      className="flex flex-1 items-center justify-center rounded-xl border border-white/10 bg-slate-800 p-2.5 text-slate-100 shadow-sm transition-colors hover:bg-white hover:text-black sm:flex-none"
+                      className="flex flex-1 items-center justify-center rounded-xl border border-white/5 bg-[#232121] p-2.5 text-slate-100 shadow-sm transition-colors hover:bg-white/90 hover:text-black sm:flex-none"
                     >
                       <FiGithub size={20} />
-                    </a>
+                    </Link>
                     {p.backend && (
-                      <a
+                      <Link
                         href={p.backend}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Backend source code"
-                        className="flex flex-1 items-center justify-center rounded-xl border border-white/10 bg-slate-800 p-2.5 text-slate-100 shadow-sm transition-colors hover:bg-white hover:text-black sm:flex-none"
+                        className="flex flex-1 items-center justify-center rounded-xl border border-white/5 bg-[#232121] p-2.5 text-slate-100 shadow-sm transition-colors hover:bg-white/90 hover:text-black sm:flex-none"
                       >
                         <FiCode size={20} />
-                      </a>
+                      </Link>
                     )}
                   </div>
                 </div>
