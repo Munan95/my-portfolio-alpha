@@ -68,7 +68,7 @@ export default function Projects() {
                   <h2 className="text-xl font-bold tracking-tight transition-colors sm:text-2xl">
                     {p.title}
                   </h2>
-                  <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-slate-400 sm:text-base">
+                  <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-white/50 sm:text-base">
                     {p.description}
                   </p>
                 </div>

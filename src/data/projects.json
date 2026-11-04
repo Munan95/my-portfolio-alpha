@@ -2,10 +2,10 @@
   {
     "id": 41,
     "title": "Photo Gallery - Photography Management System",
-    "description": "Photo Gallery is an interactive, AI-driven educational chatbot designed specifically for children under 7 to facilitate progressive English language acquisition. The platform features a dynamic level-based learning system (Phonics, Phrases, and Sentences) with enforced linguistic constraints. It integrates advanced Social-Emotional Learning (SEL) capabilities, allowing the bot to detect negative sentiment and provide empathetic support before transitioning back to structured learning.",
+    "description": "Photo Gallery is a responsive, web-based photo management platform designed to provide users with an intuitive and visually engaging browsing experience. The application features a dynamic photo gallery with album-based filtering, real-time search functionality, and detailed photo views. It displays photo and album metadata, including unique identifiers and titles, while offering a streamlined navigation system with Home, About, and Contact pages. The platform also includes dark mode support and user authentication through a login interface, delivering a seamless and accessible photo discovery experience.",
     "image": "/project-1.png",
     "tags": [
-      "Next.js 17",
+      "Next.js 16",
       "JavaScript"
     ],
     "live": "https://photo-gallery-pg.netlify.app",
@@ -14,7 +14,7 @@
   {
     "id": 40,
     "title": "Weather Management System",
-    "description": "WeathrNow is a high-performance, completely type-safe E-Commerce Product Management Platform designed for merchants to seamlessly organize their inventories. The system enforces strict role-isolation, allowing logged-in merchants to securely perform CRUD operations exclusively on their own products. Features include advanced server-side search, multi-parameter sorting, category filtering, API debouncing, and secure image streaming using Cloudinary.",
+    "description": "WeatherNow is a responsive, web-based weather forecasting application designed to provide users with real-time weather information and comprehensive atmospheric insights. The platform features location-based weather search, current weather conditions, and interactive hourly and weekly forecasts. It displays essential weather metrics, including temperature, UV index, wind speed and direction, humidity, visibility, air quality, and sunrise and sunset times. Users can switch between Celsius and Fahrenheit and access location-specific weather updates through an intuitive dashboard. With a clean, modern interface and responsive navigation, WeatherNow delivers an accessible and informative weather monitoring experience.",
     "image": "/project-2.png",
     "tags": [
       "Next.js 16 (App Router)",
@@ -26,7 +26,7 @@
   {
     "id": 39,
     "title": "PureHealth - Smart Health Solutions",
-    "description": "Health solutions is a modern, production-ready e-commerce platform designed for baby and maternity products. The system supports role-based access for Admin, Staff, and Customers. Key features include product and category management, cart and checkout flow, order tracking, wishlist, coupon system, inventory management, and secure authentication with Google OAuth. Built with Next.js 14 (App Router), Node.js, Express, Prisma, and PostgreSQL.",
+    "description": "PureHealth is a modern, responsive healthcare website designed to connect patients with trusted medical professionals and accessible healthcare services. The platform features an intuitive navigation system for exploring medical services, shopping for healthcare products, browsing health-related articles, and accessing essential information. It offers convenient appointment booking, doctor discovery, virtual consultations, and emergency assistance through dedicated interactive features. With a professional design, clear calls to action, and a user-friendly interface, PureHealth provides a seamless digital healthcare experience focused on patient convenience, accessibility, and well-being.",
     "image": "/project-3.png",
     "tags": [
       "HTML",
@@ -38,11 +38,11 @@
   {
     "id": 38,
     "title": "My Portfolio",
-    "description": "Digital Wallet System is a secure and user-friendly financial application that allows users to manage their money efficiently. It features role-based access for Admin, Users, and Managers. Key functionalities include wallet management, sending and receiving money, transaction history, and real-time balance tracking. Built with React & JavaScript, NodeJS & ExpressJS, Redux for state management, and MongoDB for data storage.",
-    "image": "/project-4.png",
+    "description": "Munan is a personal portfolio website showcasing the work, skills, and professional identity of a full-stack developer. The platform features a modern, responsive design with a dark-themed interface, smooth navigation, and interactive elements. It introduces the developer through a personalized hero section highlighting technical expertise, development philosophy, and a professional profile. The website includes dedicated sections for About, Projects, Blogs, and Contact, allowing visitors to explore completed work, learn about the developer's background, and initiate professional connections. With a visually engaging layout, dynamic theme toggle, and clear calls to action, the portfolio provides an accessible and engaging professional showcase.",
+    "image": "/project-6.png",
     "tags": [
-      "JavaScript",
-      "React"
+      "Next.js 16",
+      "JavaScript"
     ],
     "live": "https://my-portfolio-five-navy-78.vercel.app",
     "github": "https://github.com/Munan95/my-portfolio",
@@ -51,7 +51,7 @@
   {
     "id": 37,
     "title": "Multiple Card Rendering",
-    "description": "Multiple Card Rendering is a comprehensive management platform with role-based access for Admin, HR Manager, and Users. It features a powerful dashboard for tracking tasks, users, and analytics, along with a built-in payment system. The frontend is built with React, while NodeJS & ExpressJS handle the backend and MongoDB stores the data. Authentication is secured with JWT and Firebase.",
+    "description": "This is a modern, responsive professional directory platform designed to showcase individual profiles, professional expertise, and contact information in an organized and visually engaging format. The application features a dynamic card-based layout with profile photographs, cover images, names, job titles, locations, biographies, and contact details. Each profile includes additional information such as birth dates, phone numbers, and profile creation dates, along with interactive action buttons for accessing external links and profile-related features. With an intuitive interface, consistent card styling, and responsive design, the platform provides an accessible and user-friendly experience for browsing and discovering professionals across various industries.",
     "image": "/project-5.png",
     "tags": [
       "React",
