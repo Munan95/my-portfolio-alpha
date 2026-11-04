@@ -55,13 +55,13 @@ export default function Contact() {
         <div className="space-y-8">
           <div className="space-y-4">
             <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl">
-              Let’s{" "}
-              <span className="bg-linear-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent">
+              Let's{" "}
+              <span className="bg-linear-to-l from-rose-400 to-amber-200 bg-clip-text text-transparent">
                 Connect
               </span>
             </h1>
             <p className="max-w-md text-lg leading-relaxed text-white/60">
-              I specialize in Next.js, Prisma, and MongoDB. Whether you have a project in
+              I specialize in Next.js, React.js, and MongoDB. Whether you have a project in
               mind or just want to say hi, my inbox is always open!
             </p>
           </div>
@@ -70,14 +70,14 @@ export default function Contact() {
             {contactInfo.map(({ label, value, href, icon: Icon, external }) => {
               const content = (
                 <>
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-teal-500/10 text-teal-500 transition-all duration-300 group-hover:bg-teal-500 group-hover:text-white">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-300/10 text-rose-500 transition-all duration-300 group-hover:bg-rose-500/70 group-hover:text-white">
                     <Icon />
                   </div>
                   <div>
                     <p className="text-xs font-bold uppercase tracking-widest text-white/40">
                       {label}
                     </p>
-                    <p className="font-medium text-white transition-colors group-hover:text-teal-500">
+                    <p className="font-medium text-white transition-colors group-hover:text-rose-400">
                       {value}
                     </p>
                   </div>
@@ -104,7 +104,7 @@ export default function Contact() {
 
         {/* Right: form */}
         <div className="group relative">
-          <div className="absolute -inset-1 rounded-4xl bg-linear-to-r from-teal-500 to-blue-500 opacity-20 blur transition duration-1000 group-hover:opacity-40" />
+          <div className="absolute -inset-1 rounded-4xl bg-linear-to-r from-rose-400 to-amber-200 opacity-20 blur transition duration-1000 group-hover:opacity-40" />
 
           <form
             onSubmit={handleSubmit}
@@ -120,7 +120,7 @@ export default function Contact() {
                   name="name"
                   type="text"
                   required
-                  placeholder="John Doe"
+                  placeholder="Your Name"
                   value={form.name}
                   onChange={handleChange}
                   className={inputClass}
@@ -177,7 +177,7 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="flex w-full items-center justify-center gap-3 rounded-xl bg-teal-600 py-4 font-bold text-white shadow-lg shadow-teal-500/20 transition-all hover:bg-teal-700 active:scale-[0.98]"
+              className="flex w-full items-center justify-center gap-3 rounded-xl bg-rose-500/50 py-4 font-bold text-white shadow-lg shadow-teal-500/20 transition-all hover:bg-rose-500/40 active:scale-[0.98]"
             >
               <FaPaperPlane className="text-sm" /> Send Message
             </button>
