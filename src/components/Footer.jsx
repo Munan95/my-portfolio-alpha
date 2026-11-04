@@ -31,8 +31,8 @@ export default function Footer() {
       {/* thin amber glow along the top edge */}
       <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-amber-100/60 to-transparent" />
 
-      <div className="mx-auto max-w-384 px-6 pb-8 pt-20">
-        <div className="flex flex-col items-start justify-between gap-10 md:flex-row md:items-center">
+      <div className="mx-auto max-w-384 px-6 pb-8 pt-12 sm:pt-20">
+        <div className="flex flex-col items-start justify-between gap-10 lg:flex-row lg:items-center">
           {/* Brand */}
           <div>
             <Link href="/" className="text-[28px] font-bold italic tracking-tight">
@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <ul className="flex items-center gap-9">
+          <ul className="flex flex-wrap items-center gap-x-6 gap-y-3 sm:gap-x-9">
             {links.map((l) => (
               <li key={l.href}>
                 <Link href={l.href} className="text-[15px] transition-colors hover:text-amber-200">
