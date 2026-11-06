@@ -52,70 +52,76 @@ export default function Navbar() {
   }, [dark]);
 
   return (
-    // Fixed : stays pinned to the top while scrolling
-    <header className="fixed top-2 inset-x-4 md:top-4 md:inset-x-8 lg:top-6 lg:inset-x-16 h-16 max-w-7xl mx-auto rounded-full bg-background/80 dark:bg-black/50 backdrop-blur-md border border-white/10 shadow-md z-50 transition-all">
-      <nav
-        className="flex h-full items-center justify-between px-6 md:px-8">
-        {/* Logo */}
-        <Link href="/" className="text-2xl font-bold tracking-tight text-rose-400">
-          MUNAN.
-        </Link>
+    <div className="relative">
 
-        {/* Links (centered on desktop, hidden on small screens) */}
-        <ul className="hidden items-center gap-6 md:flex">
-          {links.map((l) => (
-            <li key={l.href}>
-              <Link href={l.href} className="flex items-center text-sm text-white transition-colors rounded-md p-2.25 hover:bg-[#171717b5]">
-                {l.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+      <div className="absolute -top-2 -left-2 -z-10 h-30 w-30 rounded-full bg-white/90 blur-[150px]" />
 
-        {/* Right side: theme toggle + mobile menu button */}
-        <div className="flex items-center gap-2">
-          <button
-            type="button"
-            onClick={() => setDark((d) => !d)}
-            aria-label="Toggle theme"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#2c2c2c]
+      {/* Fixed : stays pinned to the top while scrolling */}
+      <header className="fixed top-2 inset-x-4 md:top-4 md:inset-x-8 lg:top-6 lg:inset-x-16 h-16 max-w-7xl mx-auto rounded-full bg-background/80 dark:bg-black/50 backdrop-blur-md border border-white/10 shadow-md z-50 transition-all">
+        <nav
+          className="flex h-full items-center justify-between px-6 md:px-8">
+          {/* Logo */}
+          <Link href="/" className="text-2xl font-bold tracking-tight text-rose-400">
+            MUNAN.
+          </Link>
+
+          {/* Links (centered on desktop, hidden on small screens) */}
+          <ul className="hidden items-center gap-6 md:flex">
+            {links.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="flex items-center text-sm text-white transition-colors rounded-md p-2.25 hover:bg-[#171717b5]">
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          {/* Right side: theme toggle + mobile menu button */}
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={() => setDark((d) => !d)}
+              aria-label="Toggle theme"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-[#2c2c2c]
                bg-[#1e1e1e] text-rose-400 transition-colors hover:bg-[#262626]
                focus-visible:outline-2 focus-visible:outline-rose-400"
-          >
-            {dark ? <MoonIcon /> : <SunIcon />}
-          </button>
+            >
+              {dark ? <MoonIcon /> : <SunIcon />}
+            </button>
 
-          <button
-            type="button"
-            onClick={() => setOpen((o) => !o)}
-            aria-label="Toggle menu"
-            aria-expanded={open}
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#2c2c2c]
+            <button
+              type="button"
+              onClick={() => setOpen((o) => !o)}
+              aria-label="Toggle menu"
+              aria-expanded={open}
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-[#2c2c2c]
                bg-[#1e1e1e] text-white transition-colors hover:bg-[#262626] md:hidden"
-          >
-            <MenuIcon open={open} />
-          </button>
-        </div>
+            >
+              <MenuIcon open={open} />
+            </button>
+          </div>
 
-      </nav>
+        </nav>
 
-      {/* Mobile dropdown */}
-      {open && (
-        <ul className="absolute inset-x-0 top-full mt-2 flex flex-col gap-1 rounded-3xl border border-white/10 bg-black/80 p-3 shadow-xl backdrop-blur-md md:hidden">
-          {links.map((l) => (
-            <li key={l.href}>
-              <Link
-                href={l.href}
-                onClick={() => setOpen(false)}
-                className="block rounded-xl px-4 py-3 text-sm text-white transition-colors hover:bg-white/10"
-              >
-                {l.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
+        {/* Mobile dropdown */}
+        {open && (
+          <ul className="absolute inset-x-0 top-full mt-2 flex flex-col gap-1 rounded-3xl border border-white/10 bg-black/80 p-3 shadow-xl backdrop-blur-md md:hidden">
+            {links.map((l) => (
+              <li key={l.href}>
+                <Link
+                  href={l.href}
+                  onClick={() => setOpen(false)}
+                  className="block rounded-xl px-4 py-3 text-sm text-white transition-colors hover:bg-white/10"
+                >
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
 
-    </header>
+      </header>
+      
+    </div>
   );
 };
