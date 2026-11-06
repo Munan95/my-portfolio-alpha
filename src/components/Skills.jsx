@@ -29,14 +29,14 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className="relative overflow-hidden w-full bg-black/30 px-6 py-20 text-white transition-colors duration-500 sm:px-12 lg:px-20">
+    <section className="relative overflow-hidden w-full bg-black/10 px-6 py-20 text-white transition-colors duration-500 sm:px-12 lg:px-20">
 
       <div className="mx-auto max-w-7xl">
         {/* Heading */}
         <div className="mb-16 text-center">
           <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
             My{" "}
-            <span className="bg-linear-to-r from-rose-400 to-orange-300 bg-clip-text text-transparent">
+            <span className="bg-linear-to-l from-rose-400 to-orange-300 bg-clip-text text-transparent">
               Skills
             </span>
           </h2>

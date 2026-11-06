@@ -47,7 +47,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="relative flex min-h-screen w-full items-center overflow-hidden bg-black/30 px-6 py-20 text-white md:px-12 lg:px-20">
+    <section className="relative flex min-h-screen w-full items-center overflow-hidden bg-black/10 px-6 py-20 text-white md:px-12 lg:px-20">
       {/* Background glows */}
 
       <div className="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-12 lg:grid-cols-2">
@@ -56,7 +56,7 @@ export default function Contact() {
           <div className="space-y-4">
             <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl">
               Let's{" "}
-              <span className="bg-linear-to-l from-rose-400 to-amber-200 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-rose-400 to-amber-200 bg-clip-text text-transparent">
                 Connect
               </span>
             </h1>
@@ -177,7 +177,7 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="flex w-full items-center justify-center gap-3 rounded-xl bg-rose-500/50 py-4 font-bold text-white shadow-lg shadow-teal-500/20 transition-all hover:bg-rose-500/40 active:scale-[0.98]"
+              className="flex w-full items-center justify-center gap-3 rounded-xl bg-rose-500/60 py-4 font-bold text-white shadow-lg shadow-teal-500/20 transition-all hover:bg-rose-500/50 active:scale-[0.98]"
             >
               <FaPaperPlane className="text-sm" /> Send Message
             </button>

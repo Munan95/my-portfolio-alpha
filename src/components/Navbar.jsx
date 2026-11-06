@@ -57,9 +57,9 @@ export default function Navbar() {
       <div className="absolute -top-2 -left-2 -z-10 h-30 w-30 rounded-full bg-white/90 blur-[150px]" />
 
       {/* Fixed : stays pinned to the top while scrolling */}
-      <header className="fixed top-2 inset-x-4 md:top-4 md:inset-x-8 lg:top-6 lg:inset-x-16 h-16 max-w-7xl mx-auto rounded-full bg-background/80 dark:bg-black/50 backdrop-blur-md border border-white/10 shadow-md z-50 transition-all">
+      <header className="fixed top-2 inset-x-4 md:top-5 md:inset-x-8 lg:top-7 lg:inset-x-16 h-16 max-w-7xl mx-auto rounded-full bg-background/80 dark:bg-black/50 backdrop-blur-md border border-white/10 shadow-md z-50 transition-all">
         <nav
-          className="flex h-full items-center justify-between px-6 md:px-8">
+          className="flex h-full items-center justify-between px-7 md:px-8">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold tracking-tight text-rose-400">
             MUNAN.

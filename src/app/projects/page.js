@@ -5,13 +5,13 @@ import projects from "@/data/projects.json";
 
 export default function Projects() {
   return (
-    <div className="w-full px-6 pt-30 pb-24 text-white bg-black/30 sm:px-12 lg:px-20">
+    <div className="w-full px-6 pt-30 pb-24 text-white bg-black/10 sm:px-12 lg:px-20">
       <div className="mx-auto max-w-7xl">
         {/* Heading */}
         <div className="mb-16 space-y-4 text-center">
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
             🚀 My{" "}
-            <span className="bg-linear-to-r from-rose-400 to-orange-300 bg-clip-text text-transparent">
+            <span className="bg-linear-to-l from-rose-400 to-orange-300 bg-clip-text text-transparent">
               Projects
             </span>
           </h1>

@@ -15,7 +15,7 @@ const skills = [
 
 const About = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-14 lg:gap-30 justify-center items-center min-h-screen w-full px-6 py-20 lg:px-0 lg:pl-5 lg:py-0 bg-black/30">
+    <div className="flex flex-col lg:flex-row gap-14 lg:gap-30 justify-center items-center min-h-screen w-full px-6 py-20 lg:px-0 lg:pl-5 lg:py-0 bg-black/10">
 
       {/* Profile Picture */}
       <div className="group relative rounded-full">
