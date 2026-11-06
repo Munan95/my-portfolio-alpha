@@ -12,8 +12,8 @@ export default function Home() {
 
       <div className="relative overflow-hidden flex flex-1 w-full flex-col items-center justify-between gap-12 px-6 pt-12 pb-20 sm:px-12 lg:flex-row lg:pt-30 lg:pb-42 lg:pl-25 lg:pr-60 sm:items-start">
 
-        <div className="-top-2 -left-2 -z-10 h-30 w-30 rounded-full bg-white/90 blur-[150px]" />
-        <div className="absolute -bottom-2 -right-2 -z-10 h-30 w-30 rounded-full overflow-hidden bg-white/30 blur-[140px]" />
+        <div className="absolute -bottom-2 -right-2 -z-10 h-30 w-30 rounded-full overflow-hidden bg-white/20 blur-[130px]" />
+        <div className="absolute -bottom-3 -z-10 h-6 w-full overflow-hidden bg-white/30 blur-[180px]" />
         
         {/* Profile Information */}
         <div className="flex flex-col text-white w-full lg:w-130">
