@@ -37,7 +37,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="text-[28px] font-bold italic tracking-tight">
-              <span className="hover:text-amber-100">Munan</span><span className="text-amber-200">.</span>
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-rose-400 to-orange-300">Munan</span><span className="text-amber-200">.</span>
             </Link>
             <p className="mt-1 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
               Full stack developer • Building scalable web apps

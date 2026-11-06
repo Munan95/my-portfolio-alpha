@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import About from "./about/page";
 import Projects from "./projects/page";
-import Blogs from "./blogs/page";
 import Contact from "./contact/page";
 import { JavaScriptIcon } from "@/components/icon";
 import Skills from "@/components/Skills";
