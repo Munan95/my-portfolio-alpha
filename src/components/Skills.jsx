@@ -48,7 +48,7 @@ export default function Skills() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 bg-black/2">
           {skills.map(({ name, level, icon: Icon, color }) => (
             <div
               key={name}

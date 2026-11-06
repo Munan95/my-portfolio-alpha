@@ -8,21 +8,25 @@ import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center font-sans pt-40">
-      <div className="flex flex-1 w-full flex-row items-center justify-between pt-30 pb-42 pl-25 pr-60 sm:items-start">
+    <div className="flex flex-col flex-1 items-center justify-center font-sans pt-32 lg:pt-40">
+
+      <div className="relative overflow-hidden flex flex-1 w-full flex-col items-center justify-between gap-12 px-6 pt-12 pb-20 sm:px-12 lg:flex-row lg:pt-30 lg:pb-42 lg:pl-25 lg:pr-60 sm:items-start">
+
+        <div className="-top-2 -left-2 -z-10 h-30 w-30 rounded-full bg-white/90 blur-[150px]" />
+        <div className="absolute -bottom-2 -right-2 -z-10 h-30 w-30 rounded-full overflow-hidden bg-white/30 blur-[140px]" />
         
         {/* Profile Information */}
-        <div className="flex flex-col text-white w-130">
-          <p className="flex flex-row gap-2 text-6xl font-bold py-6"><span>Hi, I'm</span><span className="text-transparent bg-clip-text bg-linear-to-r from-rose-400 to-orange-300">Munan</span></p>
+        <div className="flex flex-col text-white w-full lg:w-130">
+          <p className="flex flex-row flex-wrap gap-2 text-4xl sm:text-6xl font-bold py-6"><span>Hi, I'm</span><span className="text-transparent bg-clip-text bg-linear-to-r from-rose-400 to-orange-300">Munan</span></p>
           
-          <p className="flex flex-row gap-2.5 items-center text-2xl py-2">
+          <p className="flex flex-row flex-wrap gap-2.5 items-center text-xl sm:text-2xl py-2">
             <span className="text-white/60">a Full Stack Developer |</span>
             <span><JavaScriptIcon className="h-7 w-7 text-amber-400" /></span>
           </p>
 
           <p className="text-white/60 text-lg py-3">I build modern, scalable, and user-friendly web applications with a passion for clean code and great UX.</p>
           
-          <div className="flex flex-row gap-3 text-base py-7">
+          <div className="flex flex-row flex-wrap gap-3 text-base py-7">
 
             <Link
               href="/projects"
@@ -52,7 +56,7 @@ export default function Home() {
         </div>
 
         {/* Profile Picture */}
-        <div className="group relative hidden rounded-full md:block">
+        <div className="group relative hidden rounded-full lg:block">
 
           {/* Expanding ring */}
           <span className="pointer-events-none absolute inset-0 rounded-full border-6 border-rose-100/30 animate-[ring-expand_1s_ease-out_infinite]" />
@@ -75,10 +79,12 @@ export default function Home() {
         </div>
 
       </div>
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+
+      <div id="about" className="w-full scroll-mt-24"><About /></div>
+      <div id="skills" className="w-full scroll-mt-24"><Skills /></div>
+      <div id="projects" className="w-full scroll-mt-24"><Projects /></div>
+      <div id="contact" className="w-full scroll-mt-24"><Contact /></div>
+
     </div>
   );
 };
