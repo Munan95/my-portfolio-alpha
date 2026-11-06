@@ -8,7 +8,7 @@ import Plink from "@/data/links.json";
 const contactInfo = [
   {
     label: "LinkedIn",
-    value: "morshed-khan-munan",
+    value: `${Plink.Name}`,
     href: `${Plink.Linkedin}`,
     icon: FaLinkedin,
     external: true,
@@ -21,13 +21,12 @@ const contactInfo = [
   },
   {
     label: "Location",
-    value: "Dhaka, Bangladesh",
+    value: `${Plink.Location}`,
     icon: FaMapMarkerAlt,
   },
 ];
 
-const inputClass =
-  "w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-white/30 outline-none transition-all focus:ring-2 focus:ring-teal-500";
+const inputClass = "w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-white/30 outline-none transition-all focus:ring-2 focus:ring-rose-500/60";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
